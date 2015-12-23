@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <VerticalLayout bkcolor="#FF612616">
+    <HorizontalLayout height="40" >
+      <Button name="btnGoBack" tooltip="后退" float="true"  pos="5,3,0,0" width="29" height="31" normalimage=" file='toolbar\01719.png' " hotimage=" file='toolbar\01721.png' " pushedimage="file='toolbar\01722.png'"></Button>
+      <Button name="btnGoForward" tooltip="前进" float="true" pos="40,3,0,0" width="29" height="31" normalimage=" file='toolbar\01726.png' " hotimage=" file='toolbar\01728.png' " pushedimage="file='toolbar\01729.png'"></Button>
+      <Button name="btnRefresh" tooltip="刷新" float="true" pos="75,3,0,0" width="29" height="31" normalimage=" file='toolbar\01772.png' " hotimage=" file='toolbar\01773.png' " pushedimage="file='toolbar\01774.png'"></Button>
+      <Button name="btnGoHome" tooltip="主页" float="true" pos="110,3,0,0" width="29" height="31" normalimage=" file='toolbar\01760.png' " hotimage=" file='toolbar\01761.png' " pushedimage="file='toolbar\01762.png'"></Button>
+    </HorizontalLayout>
+    <HorizontalLayout padding="5,5,5,5">
+        <!--这里在放一个浏览器webkit控件-->
+        <wkeWebkit name="ie" bkcolor="#FFFFFFFF"/>
+      </HorizontalLayout>
+  </VerticalLayout>
+</Window>

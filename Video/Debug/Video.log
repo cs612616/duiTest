@@ -1,0 +1,16 @@
+﻿生成启动时间为 2015/8/28 19:28:12。
+     1>项目“F:\BYH\DUI\Video\Video.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\Video.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Video.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Video.cpp
+         Video.cpp
+     1>c:\dx9c\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\byh\dui\video\video.cpp(160): error C2660: “BindDeviceFilter”: 函数不接受 2 个参数
+     1>f:\byh\dui\video\video.cpp(178): error C3861: “DeviceConnect”: 找不到标识符
+     1>已完成生成项目“F:\BYH\DUI\Video\Video.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.81

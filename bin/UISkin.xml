@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="673,553">
+    <VerticalLayout name="VerticalLayoutUI1" width="587" height="418" bkcolor="#FFC0DCC0" bkcolor2="#00C0C0C0" bordercolor="#00A0A0A4">
+        <HorizontalLayout name="HorizontalLayoutUI1" height="30" bkcolor="#FFA0A0A4">
+            <VerticalLayout name="VerticalLayoutUI2" height="30" />
+            <VerticalLayout name="VerticalLayoutUI3" width="77" height="30">
+                <Button name="ButtonUI1" float="true" pos="6,6,0,0" width="20" height="19" bkcolor="#FF808080" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Button name="ButtonUI2" float="true" pos="29,6,0,0" width="20" height="19" bkcolor="#FF808080" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Button name="ButtonUI3" float="true" pos="53,6,0,0" width="22" height="19" bkcolor="#FF808080" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+            </VerticalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

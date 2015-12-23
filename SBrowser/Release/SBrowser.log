@@ -1,0 +1,16 @@
+﻿生成启动时间为 2015/7/21 11:08:04。
+     1>项目“F:\BYH\DUI\SBrowser\SBrowser.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\SBrowser.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\SBrowser.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SBrowser.cpp WebEventEx.cpp
+         SBrowser.cpp
+     1>SBrowser.cpp(101): error C2039: “ShellExecute”: 不是“`global namespace'”的成员
+     1>SBrowser.cpp(101): error C3861: “ShellExecute”: 找不到标识符
+         WebEventEx.cpp
+     1>已完成生成项目“F:\BYH\DUI\SBrowser\SBrowser.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.02

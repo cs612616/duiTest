@@ -1,0 +1,11 @@
+11:54:36 -- DllMain:Process start
+11:54:36 -- DllMain:F:\BYH\DUI\LSPINST\.\bin\LSPINST.exe
+11:54:36 -- WSPStartup:start
+11:54:36 -- CLspManager::WSPStartup:start
+11:54:36 -- CLspManager::WSPStartup:Find Next DLL WspStartUp
+11:54:36 -- CLspManager::WSPStartup:Run WspStartUp
+11:54:36 -- CLspManager::WSPSocket:start F:\BYH\DUI\LSPINST\.\bin\LSPINST.exe
+11:54:36 -- CLspManager::WSPSendTo:start F:\BYH\DUI\LSPINST\.\bin\LSPINST.exe
+11:54:36 -- CLspManager::WSPSendTo: SPI TEST Demo! 
+,destIP=127.0.0.1
+11:54:39 -- DllMain:Process end

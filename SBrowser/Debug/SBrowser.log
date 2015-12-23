@@ -1,0 +1,32 @@
+﻿生成启动时间为 2015/8/25 11:21:54。
+     1>项目“F:\BYH\DUI\SBrowser\SBrowser.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\debug\SBrowser.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp".\debug\SBrowser_d.pch" /Fo".\debug\\" /Fd".\debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SBrowser.cpp
+         SBrowser.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\SBrowser_d.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\debug\SBrowser_d.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\BYH\DUI\SBrowser\bin\SBrowser_d.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\bin\SBrowser_d.lib" /MACHINE:X86 .\debug\SBrowser.res
+         .\debug\SBrowser_d.exe.embed.manifest.res
+         .\debug\SBrowser.obj
+         .\debug\stdafx.obj
+         .\debug\WebEventEx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\debug\SBrowser_d.exe.embed.manifest" /manifest .\debug\SBrowser_d.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         SBrowser.vcxproj -> F:\BYH\DUI\SBrowser\.\bin\SBrowser_d.exe
+       FinalizeBuildStatus:
+         正在删除文件“.\debug\SBrowser.unsuccessfulbuild”。
+         正在对“.\debug\SBrowser.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\BYH\DUI\SBrowser\SBrowser.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.14

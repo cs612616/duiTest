@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="400,320" mininfo="400,320" caption="0,0,0,95" sizebox="5,5,5,5" >
+  <VerticalLayout bkimage="login\00008.png" >
+    <HorizontalLayout height="170" >
+      <HorizontalLayout></HorizontalLayout>
+      <Button name="closebtn" width="42" maxheight="18" tooltip="点击这里直接退出游戏" normalimage="file='login\frame_btn_close_normal.bmp' mask='#FFFF00FF'" hotimage="file='login\frame_btn_close_hot.bmp' mask='#FFFF00FF'" pushedimage="file='login\frame_btn_close_down.bmp' mask='#FFFF00FF'"/>
+    </HorizontalLayout>
+    <Container bkcolor="#FFFFFFFF" >
+      <Label text="账号：" float="true" pos="60, 20, 128, 42" />
+      <Combo name="accountcombo" float="true" pos="130, 20, 270, 42" tooltip="请点击这里选择您准备使用的账号" normalimage="file='login\Combo_nor.bmp' corner='2,2,24,2'" hotimage="file='login\Combo_over.bmp' corner='2,2,24,2'" pushedimage="file='login\Combo_over.bmp' corner='2,2,24,2'" textpadding="1,1,1,1" >
+        <ListLabelElement text="张三" selected="true" />
+        <ListLabelElement text="李四" />
+      </Combo>
+      <Button text="{u}注册账号{/u}" showhtml="true" float="true" pos="280, 20, 350, 42" tooltip="如果你还没有账号，请点击注册一个账号" />
+      <Edit name="accountedit" float="true" pos="131, 21, 249, 41" tooltip="请在这里输入您的账号"/>
+      <Label text="密码：" float="true" pos="60, 55, 128, 75" />
+      <Edit name="pwdedit" float="true" pos="130, 55, 270, 75" password="true" tooltip="请在这里输入您的密码" bordercolor="#FF4EA0D1" bordersize="1"/>
+      <Button text="{u}{l}找回密码{/l}{/u}" showhtml="true" float="true" pos="280, 55, 350, 75" tooltip="如果你忘记了密码，请点击找回密码"/>
+      <Button name="SettingBtn" text="设置" float="true" pos="86, 90, 146, 110" tooltip="Use English Language" normalimage="login\button_nor.bmp" hotimage="login\button_over.bmp" pushedimage="login\button_down.bmp" />
+      <Button name="loginBtn" text="登录" float="true" pos="236, 90, 296, 110" tooltip="点击这里登录游戏" normalimage="login\button_nor.bmp" hotimage="login\button_over.bmp" pushedimage="login\button_down.bmp" />
+    </Container>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,33 @@
+﻿生成启动时间为 2015/7/20 18:20:15。
+     1>项目“F:\BYH\DUI\duidemo\duidemo.vcxproj”在节点 3 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“.\debug\duidemo.lastbuildstate”。
+       InitializeBuildStatus:
+         正在对“.\debug\duidemo.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug/duidemo.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/duidemo.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\debug\\" /Gd /TP /analyze- /errorReport:prompt duidemo.cpp
+         duidemo.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /l"0x0406" /nologo /fo".\debug\duidemo.res" duidemo.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\debug_bin\duidemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\debug\duidemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/duidemo.pdb" /MAP:".\Debug/duidemo.map" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\debug_bin\duidemo.lib" /MACHINE:X86 .\debug\duidemo.res
+         .\Debug/duidemo.obj
+         .\Debug/StdAfx.obj
+         F:\BYH\DUI\lib\DuiLib_d.lib
+         duidemo.vcxproj -> F:\BYH\DUI\duidemo\.\debug_bin\duidemo.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\debug_bin\duidemo.exe;#1" /manifest .\debug\duidemo.exe.intermediate.manifest
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug/duidemo.bsc" .\debug\duidemo.sbr .\debug\StdAfx.sbr
+       CopyFilesToOutputDirectory:
+         正在将文件从“.\debug\duidemo.pdb”复制到“.\debug_bin\duidemo.pdb”。
+       FinalizeBuildStatus:
+         正在删除文件“.\debug\duidemo.unsuccessfulbuild”。
+         正在对“.\debug\duidemo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\BYH\DUI\duidemo\duidemo.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.06

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="694,454">
+    <Container name="ContainerUI1" width="60" height="30" bkcolor="#FFC0C0C0">
+        <Control name="ControlUI1" float="true" pos="165,37,0,0" width="113" height="83" />
+        <List name="ListUI1" width="694" height="375" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF">
+            <ListHeader />
+	    <ListHeaderItem text="ÐòºÅ" width="40" height="23" minwidth="16"  sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+                    <ListHeaderItem text="ÎÄ¼þÃû³Æ" width="84" height="23" minwidth="16"  sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+        </List>
+    </Container>
+</Window>

@@ -1,0 +1,38 @@
+﻿生成启动时间为 2015/7/27 21:04:03。
+     1>项目“F:\BYH\DUI\SCatch\SCatch.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\SCatch.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SCatch.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SCatch.cpp
+         SCatch.cpp
+     1>f:\byh\dui\scatch\scatch.cpp(184): warning C4244: “=”: 从“DWORD”转换到“unsigned short”，可能丢失数据
+     1>f:\byh\dui\scatch\scatch.cpp(204): warning C4101: “r_ip_hdr”: 未引用的局部变量
+     1>f:\byh\dui\scatch\scatch.cpp(291): warning C4101: “pIcmpHdr”: 未引用的局部变量
+     1>f:\byh\dui\scatch\scatch.cpp(360): warning C4244: “=”: 从“DWORD”转换到“unsigned short”，可能丢失数据
+     1>f:\byh\dui\scatch\scatch.cpp(454): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>f:\byh\dui\scatch\scatch.cpp(455): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>f:\byh\dui\scatch\scatch.cpp(416): warning C4715: “TraceRoute2”: 不是所有的控件路径都返回值
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\BYH\DUI\Debug\SCatch.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SCatch.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\BYH\DUI\Debug\SCatch.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\BYH\DUI\Debug\SCatch.lib" /MACHINE:X86 Debug\SCatch.exe.embed.manifest.res
+         Debug\SCatch.obj
+         Debug\stdafx.obj
+         LINK : 没有找到 F:\BYH\DUI\Debug\SCatch.exe 或上一个增量链接没有生成它；正在执行完全链接
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\SCatch.exe.embed.manifest" /manifest Debug\SCatch.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         SCatch.vcxproj -> F:\BYH\DUI\Debug\SCatch.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\SCatch.unsuccessfulbuild”。
+         正在对“Debug\SCatch.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\BYH\DUI\SCatch\SCatch.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.11

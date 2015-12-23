@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="1000,600" mininfo="600,400" caption="0,0,0,32" sizebox="5,5,5,5"> <!-- 窗口的初始尺孿嬿00，高600)、窗口的最小尺孿嬿00，高400)、标题栏拖拽区域(驿2)、可拖拽边框大小(这里添加sizebox后就可以拖拽边框调整大小-->
+    <VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0"> <!-- 整个窗口的背景色 -->
+        <!-- 标题栏区 -->
+        <HorizontalLayout height="32" bkcolor="#FFE6E6DC" bkcolor2="#FFAAAAA0"> <!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个便->         
+            <VerticalLayout /> <!-- 占空位，占据左边所有的空位-->
+            <VerticalLayout width="77"> <!-- 右边三个控件所占的宽度-->
+                <Button name="minbtn"   tooltip="最小化" float="true" pos="0,5,22,24"  width="23" normalimage=" file='SysBtn\MinNormal.bmp' " hotimage=" file='SysBtn\MinFocus.bmp' " pushedimage=" file='SysBtn\MinFocus.bmp' "/>
+                <Button name="maxbtn"   tooltip="最大化" float="true" pos="22,5,44,24" width="23" normalimage=" file='SysBtn\MaxNormal.bmp' " hotimage=" file='SysBtn\MaxFocus.bmp' " pushedimage=" file='SysBtn\MaxFocus.bmp' " />
+                <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="22,5,44,24" width="23" normalimage=" file='SysBtn\StoreNormal.bmp' " hotimage=" file='SysBtn\StoreFocus.bmp' " pushedimage=" file='SysBtn\StoreFocus.bmp' " />
+                <Button name="closebtn" tooltip="关闭"   float="true" pos="44,5,74,24" width="28" normalimage=" file='SysBtn\CloseNormal.bmp' " hotimage=" file='SysBtn\CloseFocus.bmp' " pushedimage=" file='SysBtn\CloseFocus.bmp' "/>
+            </VerticalLayout>      
+        </HorizontalLayout>
+        <!-- 菜单栏区 -->
+        <HorizontalLayout height="20" bkcolor="#FFECE9D8">
+            <Button name="btnMenu" text="Menu" float="true" pos="4,1,0,0" width="40" height="19" align="center" normalimage="" hotimage="Menu/btn_menu_hot.png" pushedimage="Menu/btn_menu_hot.png" focusedimage="Menu/btn_menu_hot.png" textcolor="#FF000000" hottextcolor="#FFFFFFFF" pushedtextcolor="#FFFFFFFF" focusedtextcolor="#FFFFFFFF" bkcolor="#FFECE9D8" />
+    		</HorizontalLayout>
+        <HorizontalLayout height="1" bkcolor="#FFAAAAA0" />
+        <!-- 客户区 -->
+        <!-- 工具栏区--> 
+        <HorizontalLayout height="40" bkcolor="#FFECEaa8">
+        	<VerticalLayout width="220">
+        			<Button name="btnGoBack" tooltip="后退" float="true"  pos="5,5,0,0" width="32" height="32" normalimage=" file='01719.png' " hotimage=" file='01721.png' " pushdimage=" file='01722.png' "></Button>
+        			<Button name="btnGoForward" tooltip="前进" float="true" pos="40,5,0,0" width="32" height="32" normalimage=" file='01726.png' " hotimage=" file='01728.png' " pushdimage=" file='01729.png' "></Button>
+        			<Button name="btnRefresh" tooltip="刷新" float="true" pos="75,5,0,0" width="32" height="32" normalimage=" file='01772.png' " hotimage=" file='01773.png' " pushdimage=" file='01774.png' "></Button>
+        			<Button name="btnGoHome" tooltip="主页" float="true" pos="110,5,0,0" width="32" height="32" normalimage=" file='01760.png' " hotimage=" file='01761.png' " pushdimage=" file='01762.png' "></Button>
+        			<Button name="btnRestore" tooltip="恢复" float="true" pos="145,5,0,0" width="32" height="32" normalimage=" file='01775.png' " hotimage=" file='01777.png' " pushdimage=" file='01778.png' "></Button>
+        			<Button name="btnFavorite" tooltip="收藏夹" float="true"pos="180,5,0,0" width="32" height="32" normalimage=" file='01785.png' " hotimage=" file='01787.png' " pushdimage=" file='01788.png' "></Button>
+        	</VerticalLayout>
+        	<VerticalLayout>
+        			<Combo name="ComboDemo1" float="true" pos="5,8,0,0" width="360" height="25" textpadding="4,1,1,1" 
+        				normalimage="file='ComboBox/Combo_nor.bmp' corner='2,2,22,2'" 
+        				hotimage="file='ComboBox/Combo_nor.bmp' corner='2,2,22,2'" 
+        				pushedimage=" file='ComboBox/Combo_over.bmp' corner='2,2,22,2'" >
+        					<ListLabelElement text="张三" selected="true" />
+									<ListLabelElement text="李四" />	
+        			</Combo>
+						  <Edit name="Edit1" float="true" pos="6,9,0,0" width="338" height="23" textpadding="2,1,1,1" tooltip="请在这里输入您的账号"/>
+        	</VerticalLayout>
+        	<VerticalLayout width="300">
+              <Edit text="Edit2" float="true" bkcolor="#FFBECEA1" pos="0,0,0,0" height="35" width="250"/>
+        	</VerticalLayout>
+        </HorizontalLayout>
+        <!--body区-->
+        <HorizontalLayout>
+          <VerticalLayout>
+               <!--Tab控件区域-->
+               <HorizontalLayout name="tabHeader" height="30">
+                  <!--第一层tab控件，首先画 option按钮，然后再接一个TabLayout布局,在代码中响应单击事件-->
+                  <!--option按钮需要设置group属性-->
+                  <Option width="78" text="Tab1" name="Tab1" textcolor="#FF386382" font="2" normalimage="tabBtn/tabbar_normal.png" hotimage="tabBtn/tabbar_hover.png" pushedimage="tabBtn/tabbar_pushed.png" selectedimage="tabBtn/tabbar_pushed.png" group="listHeader" selected="true"></Option>
+               </HorizontalLayout>
+               <!--网页区域,改为由TabLayout控制-->
+               <TabLayout name="tabSwitch">
+                 <HorizontalLayout name="ActiveXLayout_1">
+                 </HorizontalLayout>
+               </TabLayout>
+            </VerticalLayout>
+        </HorizontalLayout>
+        <!--状态栏-->
+        <HorizontalLayout height="40" bkcolor="#FF000000">
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

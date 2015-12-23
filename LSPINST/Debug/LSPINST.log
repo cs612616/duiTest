@@ -1,0 +1,35 @@
+﻿生成启动时间为 2015/8/19 18:17:29。
+     1>项目“F:\BYH\DUI\LSPINST\LSPINST.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\debug\LSPINST.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp".\debug\LSPINST.pch" /Fo".\debug\\" /Fd".\debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LSPINST.cpp
+         LSPINST.cpp
+     1>f:\byh\dui\lspinst\lspinst.cpp(85): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : 参见“wcscpy”的声明
+     1>f:\byh\dui\lspinst\lspinst.cpp(112): warning C4996: 'swprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\swprintf.inl(85) : 参见“swprintf”的声明
+     1>f:\byh\dui\lspinst\lspinst.cpp(113): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : 参见“wcscpy”的声明
+     1>f:\byh\dui\lspinst\lspinst.cpp(226): warning C4101: “szBuff”: 未引用的局部变量
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\LSPINST.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\debug\LSPINST.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\BYH\DUI\LSPINST\bin\LSPINST.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\bin\LSPINST.lib" /MACHINE:X86 .\debug\LSPINST.exe.embed.manifest.res
+         .\debug\LSPINST.obj
+         .\debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\debug\LSPINST.exe.embed.manifest" /manifest .\debug\LSPINST.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         LSPINST.vcxproj -> F:\BYH\DUI\LSPINST\.\bin\LSPINST.exe
+       FinalizeBuildStatus:
+         正在删除文件“.\debug\LSPINST.unsuccessfulbuild”。
+         正在对“.\debug\LSPINST.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\BYH\DUI\LSPINST\LSPINST.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.75

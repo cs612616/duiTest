@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="1400,800" mininfo="600,400" caption="0,0,0,95" sizebox="5,5,5,5" >
+  <Font shared="true" id="0" name="宋体" size="14" bold="false" default="true"  />
+  <Font shared="true" id="1" name="微软雅黑" size="14" />
+  <Font shared="true" id="2" name="幼圆" size="14" />
+  <!--高600)、窗口的最小尺孿嬿00，高400)、标题栏拖拽区域(驿2)、可拖拽边框大小(这里添加sizebox后就可以拖拽边框调整大小-->
+  <VerticalLayout bkcolor="#FF1178b6" bordercolor="#FF000000" bordersize="5" >
+    <!-- 整个窗口的背景色 -->
+    <!-- 标题栏区 -->
+    <HorizontalLayout height="95">
+      <!--标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个便
+         占空位，占据左边所有的空位-->
+      <!--这里放置option按钮-->
+      <HorizontalLayout >
+        <VerticalLayout width="300">
+          <Label name="logoBtn" tooltip="小能科技" width="230" float="true" pos="50,15,200,75" bkimage="tabBtn\00004.png"></Label>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Container >
+            <Option name="consultBtn" tooltip="咨询接待" float="true" pos="24,15,0,0" width="50" height="50" group="listHeader" bkimage="tabBtn\00049.png" ></Option>
+            <Label text="咨询接待" font="1" fontsize="10" textcolor="#FFFAFAFA" align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+          </Container>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Option name="handSaleBtn" tooltip="手动营销" float="true" pos="24,15,0,0" width="50" height="50" group="listHeader" bkimage="tabBtn\00055.png" ></Option>
+          <Label text="手动营销" font="0" textcolor="#FF8ABA0A"  align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Option name="userResBtn" tooltip="用户资源" float="true" pos="24,15,0,0" width="50" height="50"  group="listHeader" bkimage="tabBtn\00052.png"></Option>
+          <Label text="用户资源" align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Option name="listBtn" tooltip="我的工单" float="true" pos="24,15,0,0" width="50" height="50" group="listHeader" bkimage="tabBtn\00057.png"></Option>
+          <Label text="我的工单" align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Option name="interactRecordtBtn" tooltip="互动记录" float="true" pos="24,15,0,0" width="50" height="50" group="listHeader" bkimage="tabBtn\00056.png" selected="true" ></Option>
+          <Label text="互动记录" align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Option name="reportBtn" tooltip="我的报表" float="true" pos="24,15,0,0" width="50" height="50" group="listHeader" bkimage="tabBtn\00053.png"></Option>
+          <Label text="我的报表" align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+        </VerticalLayout>
+        <VerticalLayout width="100">
+          <Option name="workmateBtn" tooltip="我的同事" float="true" pos="24,15,0,0" width="50" height="50" group="listHeader" bkimage="tabBtn\00052.png"></Option>
+          <Label text="我的同事" align="center" valign="bottom" float="true" pos="24,65,75,85"></Label>
+        </VerticalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout width="360" >
+        <VerticalLayout >
+          <!--右边三个控件所占的宽度-->
+          <HorizontalLayout height="20">
+            <Button name="minbtn"   tooltip="最小化" float="true" pos="288,0,22,19" width="23" normalimage=" file='SysBtn\MinNormal.bmp' " hotimage=" file='SysBtn\MinFocus.bmp' " pushedimage="file='SysBtn\MinFocus.bmp'"/>
+            <Button name="maxbtn"   tooltip="最大化" float="true" pos="310,0,44,19" width="23" normalimage=" file='SysBtn\MaxNormal.bmp' " hotimage=" file='SysBtn\MaxFocus.bmp' " pushedimage="file='SysBtn\MaxFocus.bmp'" />
+            <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="310,0,44,19" width="23" normalimage="file='SysBtn\StoreNormal.bmp'" hotimage="file='SysBtn\StoreFocus.bmp'" pushedimage="file='SysBtn\StoreFocus.bmp'" />
+            <Button name="closebtn" tooltip="关闭"   float="true" pos="332,0,74,19" width="28" normalimage=" file='SysBtn\CloseNormal.bmp' " hotimage=" file='SysBtn\CloseFocus.bmp'" pushedimage="file='SysBtn\CloseFocus.bmp'"/>
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Button name="btnPhoneManager" height="62" padding="0,2,0,0" bkcolor="#FFDFFDED"></Button>
+            <Button name="btnHead" tooltip="头像" padding="0,2,7,0" width="62" height="62" foreimage="file='BtnHead\00006.png'" />
+          </HorizontalLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <!--body 栏区-->
+    <HorizontalLayout>
+      <TabLayout name="switch" >
+        <HorizontalLayout>
+          <ConsultFrame name="consultFrame"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="手动营销" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="用户资源" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="我的工单" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <InteractRecordFrame name="interRecordFrame"></InteractRecordFrame>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="我的报表" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Text text="我的同事" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+        </HorizontalLayout>
+      </TabLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

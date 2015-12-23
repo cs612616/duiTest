@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout >
+    <VerticalLayout width="300" >
+      <HorizontalLayout height="100" bkcolor="#FFEAEAEA" bkcolo2r="#FFEEEAE9" >
+        <VerticalLayout>
+          <Option name="myConsultOpt" width="70" height="70" padding="16,0,0,0" group="listLeft" selected="true">
+          </Option>
+          <Label name="myConsult" text="我的咨询" align="center" valign="bottom">
+          </Label>
+        </VerticalLayout>
+        <VerticalLayout>
+          <Option name="myContactOpt" width="70" height="70" padding="16,0,0,0"  group="listLeft">
+          </Option>
+          <Label name="myContact" text="最近联系" align="center" valign="bottom">
+          </Label>
+        </VerticalLayout>
+        <VerticalLayout>
+          <Option name="myWorkmateOpt" width="70" height="70" padding="16,0,0,0" group="listLeft" >
+          </Option>
+          <Label name="myWorkmate" text="我的同事" align="center" valign="bottom">
+          </Label>
+        </VerticalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout bkcolor="#FFE9F9F9" >
+        <TabLayout name="tabLeft">
+          <HorizontalLayout>
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <List>
+              <ListContainerElement height="55"  bordersize="2"  bordercolor="#FFB0B0B0"  selected="true">
+                <Label width="45" height="45" padding="5,5,5,5"  bkcolor="#FFF9F9F9"></Label>
+                <Label text="客人9999" float="true" pos="60,5,120,25"></Label>
+                <Label text="12:00:00" float="true" pos="60,30,120,50"></Label>
+                <Label text="北京市海淀区" float="true" pos="120,5,180,25"></Label>
+                <Label text="CRM" textcolor="#FF654321" float="true" pos="270,5,300,25"></Label>
+              </ListContainerElement>
+              <ListContainerElement height="55"   bordersize="2" >
+                <Label width="45" height="45" padding="5,5,5,5"  bkcolor="#FFF9F9F9"></Label>
+                <Label text="客人9999" float="true" pos="60,5,120,25"></Label>
+                <Label text="12:00:00" float="true" pos="60,30,120,50"></Label>
+                <Label text="ADC" textcolor="#FF654321" float="true" pos="270,5,300,25"></Label>
+              </ListContainerElement>
+              <ListContainerElement height="55" bordersize="2"  bordercolor="#FFB0B0B0" >
+                <Label width="45" height="45" padding="5,5,5,5" bkcolor="#FFF9F9F9"></Label>
+                <Label text="客人9999" float="true" pos="60,5,120,25"></Label>
+                <Label text="12:00:00" float="true" pos="60,30,120,50"></Label>
+                <Label text="THE" textcolor="#FF654321" float="true" pos="270,5,300,25"></Label>
+              </ListContainerElement>
+              <ListContainerElement height="55" bordersize="2"   >
+                <Label width="45" height="45" padding="5,5,5,5" bkcolor="#FFF9F9F9"></Label>
+                <Label text="客人9999" float="true" pos="60,5,120,25"></Label>
+                <Label text="12:00:00" float="true" pos="60,30,120,50"></Label>
+              </ListContainerElement>
+            </List>
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <GameList name="workmateList" bkcolor="#FFF9F9F9" inset="1,1,1,1" header="hidden" itemhotimage="file='tree_hot.bmp' corner='2,1,2,1' " itemselectedimage="file='tree_select.bmp' corner='2,1,2,1'" itemlinecolor="#FFE4EAF2" itemshowhtml="true" vscrollbar="true" hscrollbar="true" vscrollbarstyle="width=&quot;6&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;">
+            </GameList>
+           </HorizontalLayout>
+        </TabLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+    <VerticalLayout >
+      <HorizontalLayout height="30" bkcolor="#FFDDEEFF">
+        <Label text="工作统计" width="60"></Label>
+        <Label text="0" textcolor="#FFFF11DD" width="30"></Label>
+        <Label text="排队中" width="50"></Label>
+        <Label text="10" textcolor="#FFFF11DD"  width="30"></Label>
+        <Label text="在线时长" width="60"></Label>
+        <Label text="12时38分" textcolor="#FFFF11DD"  width="60"></Label>
+        <Label text="登录时长" width="60"></Label>
+        <Label text="6时29分" textcolor="#FFFF11DD"  width="50"></Label>
+      </HorizontalLayout>
+      <HorizontalLayout>
+        <VerticalLayout width="700" bkcolor="FF1B4876">
+          <Label text="oh a oh a oh" height="65" ></Label>
+          <HorizontalLayout height="430" bkcolor="#FFFAFAFA">
+            <!--聊天窗口-->
+            
+          </HorizontalLayout>
+          <HorizontalLayout height="35" bkcolor="#FFAFAB11">
+            <!--文字表情窗口-->
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <!--打字窗口-->
+            <Label text="请在此输入文字" valign="top"></Label>
+            <Button text="关闭"  float="true" pos="500,110,585,135" bkcolor="#FF555555" ></Button>
+            <Button text="发送"  float="true" pos="595,110,680,135" bkcolor="#FF999999" ></Button>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout bkcolor="#FFEAEAEA">
+          <HorizontalLayout bkcolor="#FFF9F9F9" height="40">
+            <Option name="consultBtn1" tooltip="商品信息" text="商品信息" height="40" group="tabRight" 
+                                    normalimage="file='tabBtn/tabbar_normal.png' corner='1,3,1,3'"
+                hotimage="file='tabBtn/tabbar_hover.png' corner='1,3,1,3'"
+                pushedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"
+                selectedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"></Option>
+            <Option name="consultBtn2" tooltip="客户信息" text="客户信息" height="40" group="tabRight"
+                                    normalimage="file='tabBtn/tabbar_normal.png' corner='1,3,1,3'"
+                hotimage="file='tabBtn/tabbar_hover.png' corner='1,3,1,3'"
+                pushedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"
+                selectedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'" ></Option>
+            <Option name="consultBtn3" tooltip="互动记录" text="互动记录" height="40" group="tabRight"
+                                    normalimage="file='tabBtn/tabbar_normal.png' corner='3,3,3,3'"
+                hotimage="file='tabBtn/tabbar_hover.png' corner='1,3,1,3'"
+                pushedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"
+                selectedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"></Option>
+            <Option name="consultBtn4" tooltip="用户轨迹" text="用户轨迹" height="40" group="tabRight"
+                                    normalimage="file='tabBtn/tabbar_normal.png' corner='1,3,1,3'"
+                hotimage="file='tabBtn/tabbar_hover.png' corner='1,3,1,3'"
+                pushedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"
+                selectedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"></Option>
+            <Option name="consultBtn5" tooltip="常用话术" text="常用话术" height="40" group="tabRight"
+                                                   normalimage="file='tabBtn/tabbar_normal.png' corner='1,3,1,3'"
+                hotimage="file='tabBtn/tabbar_hover.png' corner='1,3,1,3'"
+                pushedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"
+                selectedimage="file='tabBtn/tabbar_pushed.png' corner='1,3,1,3'"></Option>   
+             </HorizontalLayout>
+          <TabLayout>
+            
+          </TabLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </HorizontalLayout>
+</Window>

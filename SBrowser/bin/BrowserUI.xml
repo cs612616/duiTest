@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="1000,600" mininfo="600,400" caption="0,0,0,32" sizebox="5,5,5,5"> <!-- 窗口的初始1000，高600)、窗口的最小尺孿嬿00，高400)、标题栏拖拽区域(驿2)、可拖拽边框大小(这里添加sizebox后就可以拖拽边框调整大小-->
+    <VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0"> <!-- 整个窗口的背景色 -->
+      <!-- 标题栏区 -->
+      <HorizontalLayout height="32" bkcolor="#FFE6E6DC" bkcolor2="#FFAAAAA0" >
+         <!--标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个便
+         占空位，占据左边所有的空位-->
+        <VerticalLayout>
+          
+        </VerticalLayout>
+        <VerticalLayout width="77">
+           <!--右边三个控件所占的宽度-->
+          <Button name="minbtn"   tooltip="最小化" float="true" pos="0,5,22,24"  width="23" normalimage=" file='SysBtn\MinNormal.bmp' " hotimage=" file='SysBtn\MinFocus.bmp' " pushedimage="file='SysBtn\MinFocus.bmp'"/>
+          <Button name="maxbtn"   tooltip="最大化" float="true" pos="22,5,44,24" width="23" normalimage=" file='SysBtn\MaxNormal.bmp' " hotimage=" file='SysBtn\MaxFocus.bmp' " pushedimage="file='SysBtn\MaxFocus.bmp'" />
+          <Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="22,5,44,24" width="23" normalimage="file='SysBtn\StoreNormal.bmp'" hotimage="file='SysBtn\StoreFocus.bmp'" pushedimage="file='SysBtn\StoreFocus.bmp'" />
+          <Button name="closebtn" tooltip="关闭"   float="true" pos="44,5,74,24" width="28" normalimage=" file='SysBtn\CloseNormal.bmp' " hotimage=" file='SysBtn\CloseFocus.bmp'" pushedimage="file='SysBtn\CloseFocus.bmp'"/>
+        </VerticalLayout>
+      </HorizontalLayout>
+      <!--工具栏区-->
+      <HorizontalLayout height="35" bkcolor="0xFFF0F0F0" inset="60,0" >
+        <!--工具-->
+        <HorizontalLayout width="215">
+          <Button name="btnGoBack" tooltip="后退" float="true"  pos="5,3,0,0" width="29" height="31" normalimage=" file='toolbar\01719.png' " hotimage=" file='toolbar\01721.png' " pushedimage="file='toolbar\01722.png'"></Button>
+          <Button name="btnGoForward" tooltip="前进" float="true" pos="40,3,0,0" width="29" height="31" normalimage=" file='toolbar\01726.png' " hotimage=" file='toolbar\01728.png' " pushedimage="file='toolbar\01729.png'"></Button>
+          <Button name="btnRefresh" tooltip="刷新" float="true" pos="75,3,0,0" width="29" height="31" normalimage=" file='toolbar\01772.png' " hotimage=" file='toolbar\01773.png' " pushedimage="file='toolbar\01774.png'"></Button>
+          <Button name="btnGoHome" tooltip="主页" float="true" pos="110,3,0,0" width="29" height="31" normalimage=" file='toolbar\01760.png' " hotimage=" file='toolbar\01761.png' " pushedimage="file='toolbar\01762.png'"></Button>
+          <Button name="btnRestore" tooltip="恢复" float="true" pos="145,3,0,0" width="29" height="31" normalimage=" file='toolbar\01775.png' " hotimage=" file='toolbar\01777.png' " pushedimage="file='toolbar\01778.png'"></Button>
+          <Button name="btnFavorite" tooltip="收藏夹" float="true" pos="180,3,0,0" width="29" height="31" normalimage=" file='toolbar\01785.png' " hotimage=" file='toolbar\01787.png' " pushedimage="file='toolbar\01788.png'"></Button>
+        </HorizontalLayout>
+        <!--地址栏--><!--地址栏用edit+combo的方式不好实现，改用edit+弹出式菜单按钮-->
+        <HorizontalLayout>
+          <VerticalLayout>
+            <!--占位-->
+            <HorizontalLayout height="5"/>
+            <HorizontalLayout>
+              <Container>
+                <Combo name="ComboSearch" width="0" height="25" textpadding="4,1,1,1"
+                    normalimage="file='ComboBox/Combo_nor.bmp' corner='2,2,22,2'"
+                    hotimage="file='ComboBox/Combo_nor.bmp' corner='2,2,22,2'"
+                    pushedimage=" file='ComboBox/Combo_over.bmp' corner='2,2,22,2'" >
+                  <ListLabelElement text="张三" selected="true" />
+                  <ListLabelElement text="李四" />
+                </Combo>
+              </Container>
+            </HorizontalLayout>
+            <HorizontalLayout height="5"/>
+          </VerticalLayout>
+        </HorizontalLayout>
+        <!--搜索栏-->
+        <HorizontalLayout  width="250">
+          <VerticalLayout>
+              <!--占位-->
+              <HorizontalLayout height="5"/>
+              <HorizontalLayout  inset="1,1,1,1" bordersize="1" bordercolor="0xFFAAAAA0">
+                <HorizontalLayout width="16" bkcolor="0xFFFFFFFF">
+                  <Button name="btnEngine" float="true" pos="0,4,0,0" width="16" height="16" tooltips="搜索引擎" bkimage="file='searchBar\00086.png'" />
+                </HorizontalLayout>
+                <Edit visible="true" name="search_edit" inset="4,1,0,0" height="27" text="百度" textcolor="FFAAAAA0"/>
+                <Button name="btnSearch" showhtml="true" height="27" width="24" text="{i search_btn.png}{/i}" />
+              </HorizontalLayout>
+              <HorizontalLayout height="5"/>
+          </VerticalLayout>
+        </HorizontalLayout>
+          <!--右侧小按钮-->
+        <HorizontalLayout width="150">
+          <Button name="btnSnapshot" tooltip="截图" float="true" pos="10,10,0,0" width="20" height="19" normalimage=" file='toolbar\00039.png' " hotimage=" file='toolbar\00039.png' " pushedimage="file='toolbar\00039.png'"/>
+          <Button name="btnAPP" tooltip="扩展应用" float="true" pos="35,3,0,0" width="31" height="31" normalimage=" file='toolbar\01792.png' " hotimage=" file='toolbar\01793.png' " pushedimage="file='toolbar\01794.png'"></Button>
+          <Button name="btnSkin" tooltip="换肤" float="true" pos="70,5,0,0" width="28" height="28" normalimage=" file='toolbar\03212.png' " hotimage=" file='toolbar\03213.png' " pushedimage="file='toolbar\03214.png'"></Button>
+          <Button name="btnSetting" tooltip="设置" float="true" pos="100,3,0,0" width="38" height="31" normalimage=" file='toolbar\01723.png' " hotimage=" file='toolbar\01724.png' " pushedimage="file='toolbar\01725.png'"></Button>
+        </HorizontalLayout>
+      </HorizontalLayout>
+      <!--body区-->
+      <HorizontalLayout>
+        <VerticalLayout>
+          <HorizontalLayout name="tabHeader" height="30" bkcolor="0xFFF0F0F0">
+            <!--option按钮，然后再接一个TabLayout布局,在代码中响应单击事件
+            option按钮需要设置group属性-->
+            <!--Tab头改为用BeforeNavigate创建-->
+            <HorizontalLayout name="tabText1" width="150" height="30"  >
+              <Option name="tab1" text="webWnd" textcolor="#FF386382" tooltip="LOL" font="2" endellipsis="true"
+                normalimage="file='tabBtn/tabbar_normal.png' corner='5,1,5,1'"
+                hotimage="file='tabBtn/tabbar_hover.png' corner='5,1,5,1'"
+                pushedimage="file='tabBtn/tabbar_pushed.png' corner='5,1,5,1'"
+                selectedimage="file='tabBtn/tabbar_pushed.png' corner='5,1,5,1'" group="listHeader" selected="true"></Option>
+              <Button float="true" pos="135,4,0,0" width="14" height="14" name="tabClose1" normalimage="file='tabBtn/00250.png'" ></Button>
+            </HorizontalLayout>
+            <!--加号小按钮-->
+            <HorizontalLayout  width="30" height="30" >
+              <Button name="btnAdd" tooltip="新建窗口"  width="30" height="28" normalimage=" file='tabbtn\03609.png' " hotimage=" file='tabbtn\03610.png' " pushedimage="file='tabbtn\03611.png'"></Button>
+            </HorizontalLayout>
+          </HorizontalLayout>
+          
+          <!--网页区域,改为由TabLayout控制-->
+          <TabLayout name="tabSwitch">
+            <!--在这里动态创建CWebBrowserUI-->
+            <HorizontalLayout name="ActiveXLayout_1">
+            </HorizontalLayout>
+          </TabLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+      <!--状态栏区-->
+      <HorizontalLayout height="40" bkcolor="#FFAAAAA0">
+        <HorizontalLayout>
+          <Label name="statuxText" text="正在加载中..."/>
+        </HorizontalLayout>
+        <HorizontalLayout width="200" bkcolor="#FFFAABB0">
+            <!--<Label text="这里还有一些小工具=.="/>-->
+          <Button name="btnStretch" tooltip="设置" float="true" pos="70,3,0,0" width="38" height="31" normalimage=" file='toolbar\01723.png' " hotimage=" file='toolbar\01724.png' " pushedimage="file='toolbar\01725.png'"></Button>
+        </HorizontalLayout>
+      </HorizontalLayout>
+      <Button name="btnHead" float="true" tooltip="头像" pos="7,7,0,0"  width="55" height="55" foreimage="file='BtnHead\01355.png'" />
+    </VerticalLayout>
+</Window>

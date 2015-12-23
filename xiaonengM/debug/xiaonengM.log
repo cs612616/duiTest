@@ -1,0 +1,40 @@
+﻿生成启动时间为 2015/11/19 21:26:25。
+     1>项目“F:\BYH\DUI\xiaonengM\xiaonengM.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\debug\xiaonengM.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp".\debug\xiaonengM.pch" /Fo".\debug\\" /Fd".\debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LoginFrameWnd.cpp xiaonengM.cpp
+         LoginFrameWnd.cpp
+         正在生成代码...
+         正在编译...
+         xiaonengM.cpp
+     1>f:\byh\dui\xiaonengm\xiaonengm.cpp(53): warning C4805: “==”: 在操作中将类型“BOOL”与类型“bool”混合不安全
+         正在生成代码...
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\xiaonengM.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\debug\xiaonengM.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\BYH\DUI\xiaonengM\bin\xiaonengM.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\bin\xiaonengM.lib" /MACHINE:X86 .\debug\xiaonengM.res
+         .\debug\xiaonengM.exe.embed.manifest.res
+         .\debug\ConsultFrameUI.obj
+         .\debug\InteractRecordFrame.obj
+         .\debug\LoginFrameWnd.obj
+         .\debug\stdafx.obj
+         .\debug\WkeWebkit.obj
+         .\debug\xiaonengM.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\debug\xiaonengM.exe.embed.manifest" /manifest .\debug\xiaonengM.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         xiaonengM.vcxproj -> F:\BYH\DUI\xiaonengM\.\bin\xiaonengM.exe
+       FinalizeBuildStatus:
+         正在删除文件“.\debug\xiaonengM.unsuccessfulbuild”。
+         正在对“.\debug\xiaonengM.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\BYH\DUI\xiaonengM\xiaonengM.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.86

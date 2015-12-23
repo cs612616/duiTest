@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window showshadow="true" shadowimage="shadow.png" shadowcorner="23,13,23,33">
+<Font name="微软雅黑" size="12" bold="false" default="true" />
+<Font name="微软雅黑" size="12" bold="true"/>
+<!-- Menu标签的属性要通过Default来定义，为了让下级菜单也能拥有同样的外观 -->
+<Default name="Menu" value="bordersize=&quot;1&quot; borderround=&quot;2,2&quot; bordercolor=&quot;0x303132&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;30,0,0,0&quot; bkimage=&quot;file='menu_bk.png' corner='26,2,2,2' source='6,6,44,24'&quot; itemselectedbkcolor=&quot;0xFF338ACA&quot;" />
+<!-- ExplandIcon属性定义了下级菜单的小图标的样子 -->
+<Default name="ExplandIcon" value="menu_expand.png" />
+<Menu > 
+  <!--<MenuElement height="50" >	
+      --><!--内置按钮--><!--
+		  <VerticalLayout bkcolor="#FFFFFFFE">        
+		  <Button name="Menu_btn" height="46" normalimage="btnstyle\bdkv2\button_nor.png" hotimage="btnstyle\bdkv2\button_over.png" pushedimage="btnstyle\bdkv2\button_down.png"/>    
+		  </VerticalLayout>
+  </MenuElement>-->
+  <MenuElement name="Menu_NewWnd" text="新建窗口" height="27" width="200"/>
+  <MenuElement name="Menu_NewWnd2" text="新建隐身窗口" height="27"/>
+  <MenuElement linetype="true" />
+  <MenuElement name="Menu_WebPageSave" text="保存网页" height="27" />
+  <MenuElement name="Menu_WebPageSaveAsPic" text="保存网页为图片" height="27" />
+  <MenuElement name="Menu_Search" text="查找" height="27" />
+  <!--icon="right.png" iconsize="9,9" checkitem="true" ischeck="true"-->
+  <MenuElement name="Menu_FullScreen" text="全屏" height="27" />
+    <!--设置分割线-->
+  <MenuElement linetype="true" />
+  <MenuElement name="Menu_History" text="历史记录" height="27" />
+  <MenuElement name="Menu_DownLoad" text="下载任务管理" height="27" />
+  <MenuElement linetype="true" />
+  <MenuElement name="Menu_Option" text="选项" height="27" />
+  <MenuElement name="Menu_Help" text="帮助" height="27" />
+</Menu>
+
+</Window>

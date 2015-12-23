@@ -1,0 +1,32 @@
+﻿生成启动时间为 2015/7/29 21:36:26。
+     1>项目“F:\BYH\DUI\SPcap\SPcap.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“.\debug\SPcap.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D HAVE_REMOTE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp".\debug\spcap.pch" /Fo".\debug\\" /Fd".\debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SPI.cpp
+         SPI.cpp
+     1>f:\byh\dui\spcap\spi.cpp(82): warning C4101: “szBuff”: 未引用的局部变量
+     1>f:\byh\dui\spcap\spi.cpp(154): warning C4101: “originalProtocolInfo”: 未引用的局部变量
+     1>f:\byh\dui\spcap\spi.cpp(155): warning C4101: “dwOrigCataLogId”: 未引用的局部变量
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\spcap.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\WinPcap\WpdPack\Lib" /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" wpcap.lib Packet.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\debug\spcap.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\BYH\DUI\SPcap\bin\spcap.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\bin\spcap.lib" /MACHINE:X86 .\debug\spcap.exe.embed.manifest.res
+         .\debug\SPcap.obj
+         .\debug\SPI.obj
+         .\debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\debug\spcap.exe.embed.manifest" /manifest .\debug\spcap.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         SPcap.vcxproj -> F:\BYH\DUI\SPcap\.\bin\spcap.exe
+       FinalizeBuildStatus:
+         正在删除文件“.\debug\SPcap.unsuccessfulbuild”。
+         正在对“.\debug\SPcap.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\BYH\DUI\SPcap\SPcap.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.85

@@ -1,0 +1,25 @@
+﻿生成启动时间为 2015/7/13 17:05:49。
+     1>项目“F:\BYH\DUI\duidemo\duidemo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“F:\BYH\DUI\bin\duidemo.unsuccessfulbuild”执行 Touch 任务。
+       MakeDirsForCl:
+         正在创建目录“F:\BYH\DUI\duidemo\.\Release”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /O1 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release/duidemo.pch" /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /O1 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release/duidemo.pch" /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt duidemo.cpp
+         duidemo.cpp
+       ResourceCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /l"0x0406" /nologo /fo"F:\BYH\DUI\bin\duidemo.res" duidemo.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\BYH\DUI\bin\duidemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"F:\BYH\DUI\bin\duidemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\Release/duidemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\BYH\DUI\bin\duidemo.lib" /MACHINE:X86 F:\BYH\DUI\bin\duidemo.res
+         .\Release/duidemo.obj
+         .\Release/StdAfx.obj
+         F:\BYH\DUI\lib\DuiLib_d.lib
+     1>LINK : fatal error LNK1104: 无法打开文件“..\bin\DuiLib.lib”
+     1>已完成生成项目“F:\BYH\DUI\duidemo\duidemo.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.46

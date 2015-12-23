@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="400,250" caption="1,1,1,95" sizebox="5,5,5,5" >
+  <VerticalLayout inset="4,0,4,4" bkimage="file='login\winbk.bmp' corner='4,48,4,4' mask='#FFFF00FF'" >
+    <Button name="closebtn" width="42" maxheight="18" tooltip="点击这里直接退出游戏" normalimage="file='login\frame_btn_close_normal.bmp' mask='#FFFF00FF'" hotimage="file='login\frame_btn_close_hot.bmp' mask='#FFFF00FF'" pushedimage="file='login\frame_btn_close_down.bmp' mask='#FFFF00FF'"/>
+  </VerticalLayout>
+</Window>
